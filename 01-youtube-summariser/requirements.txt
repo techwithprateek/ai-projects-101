@@ -1,5 +1,7 @@
 streamlit
 youtube-transcript-api
 langchain
+langchain-core
 langchain-openai
+langchain-text-splitters
 openai

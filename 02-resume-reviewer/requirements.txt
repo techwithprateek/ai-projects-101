@@ -1,5 +1,6 @@
 streamlit
 PyPDF2
 langchain
+langchain-core
 langchain-openai
 openai

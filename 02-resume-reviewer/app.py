@@ -2,7 +2,8 @@ import io
 
 import PyPDF2
 import streamlit as st
-from langchain.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
 
@@ -104,8 +105,8 @@ One sentence explaining the score.
 One sentence — if they could only do one thing, what should it be?""",
     )
 
-    # LCEL: pipe prompt into llm — prompt formats the text, llm generates the response
-    chain = prompt | llm
+    # LCEL: pipe prompt into llm, then parse the output to a plain string
+    chain = prompt | llm | StrOutputParser()
 
     result = chain.invoke(
         {
@@ -114,7 +115,7 @@ One sentence — if they could only do one thing, what should it be?""",
         }
     )
 
-    return result.content
+    return result
 
 
 # ─────────────────────────────────────────────────────────────────────────────
