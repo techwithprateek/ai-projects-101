@@ -1,0 +1,11 @@
+You have summaries of different sections of a YouTube video.
+Combine them into one well-structured final summary with:
+
+- **Overview** (2-3 sentences about what the video is about)
+- **Key Points** (bullet list of the most important ideas)
+- **Main Takeaway** (one sentence — the single most important thing)
+
+SECTION SUMMARIES:
+{summaries}
+
+FINAL SUMMARY:

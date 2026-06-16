@@ -1,0 +1,7 @@
+Summarise the following section of a YouTube video transcript.
+Be concise — capture the key points only.
+
+TRANSCRIPT SECTION:
+{chunk}
+
+SECTION SUMMARY:
